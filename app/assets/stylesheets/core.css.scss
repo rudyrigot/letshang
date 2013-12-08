@@ -25,7 +25,7 @@ main#index .mainbtn {
 	}
 }
 
-.appModeNote {
+#appModeNote {
 	background-color: #f8f8f8 ;
 	border-top: 1px solid #adadad ;
 	bottom: 0px ;
@@ -35,11 +35,11 @@ main#index .mainbtn {
 	text-align: center ;
 	width: 100% ;
 }
-.closeAppMode {
+#appModeNote .closeAppMode {
 	text-align: right;
 	padding: 5px 10px 0;
 	font-size: 0.8em;
 }
-#appModeNoteiOS, #appModeNoteOther {
+#appModeNote .noarrow {
 	padding-bottom: 20px;
 }

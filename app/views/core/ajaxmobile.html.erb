@@ -1,0 +1,14 @@
+<% if @iphone %>
+	<p class="closeAppMode">✖ discard</p>
+	<h5>Instant install of Let's Hang!</h5>
+	<p>Click here, then "Add to Home Screen"</p>
+	<p>▼</p>
+<% elsif @ipad %>
+	<p class="closeAppMode">✖ discard</p>
+	<h5>Instant install of Let's Hang!</h5>
+	<p class="noarrow">Click on the icon that looks like this <%= image_tag 'icons/shareiOS.png' %> then "Add to Home Screen"</p>
+<% else %>
+	<p class="closeAppMode">✖ discard</p>
+	<h5>Instant install of Let's Hang!</h5>
+	<p class="noarrow">Simply add this page to your homescreen</p>
+<% end %>
