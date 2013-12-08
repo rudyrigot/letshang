@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	if (
-	$('main#index').length /*&&
+	$('main#index').length &&
 	("standalone" in window.navigator) &&
-	!window.navigator.standalone*/
+	!window.navigator.standalone
 	){
 		setTimeout(function(){
 			if (navigator.userAgent.indexOf('iPhone') > 0) {
