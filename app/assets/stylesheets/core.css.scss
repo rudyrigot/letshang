@@ -24,3 +24,21 @@ main#index .mainbtn {
 	main#index .mainbtn {
 	}
 }
+
+.appModeNote {
+	background-color: #f8f8f8 ;
+	border-top: 1px solid #adadad ;
+	bottom: 0px ;
+	display: none ;
+	left: 0px ;
+	position: fixed ;
+	text-align: center ;
+	width: 100% ;
+}
+.closeAppMode {
+	text-align: right;
+	padding: 5px 10px 0;
+}
+#appModeNoteiOS, #appModeNoteOther {
+	padding-bottom: 20px;
+}
