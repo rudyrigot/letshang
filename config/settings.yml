@@ -1,0 +1,45 @@
+what_filters:
+  zen:
+    label: 'Zen / relaxation'
+  sports:
+    label: 'Sports'
+  outdoor:
+    label: 'Outdoor stuff'
+  discovery:
+    label: 'Discovery / unusual stuff'
+  exhibition:
+    label: 'Museum / exhibition / culture'
+  helpful:
+    label: 'Being helpful'
+  healthy:
+    label: 'Doing healthy stuff'
+  music:
+    label: 'Watching / playing music'
+  performance:
+    label: 'Watching a performance'
+  movie:
+    label: 'Watching a movie'
+  tech_hackaton:
+    label: 'Technical meetup / hackaton'
+  workplace:
+    label: 'Come to my workplace!'
+  games:
+    label: 'Playing games'
+  party:
+    label: 'Dancing / partying'
+  restaurant:
+    label: 'Eating / Dining'
+
+where_filters:
+  downtown:
+    label: 'Downtown'
+  soma:
+    label: 'South of Market'
+  mission:
+    label: 'Mission District'
+  castro:
+    label: 'The Castro'
+  financialdistrict:
+    label: 'Financial District'
+  goldengatepark:
+    label: 'Golden Gate Park'

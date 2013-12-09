@@ -7,4 +7,7 @@ class CoreController < ApplicationController
   	@ipad = request.user_agent.include? 'iPad'
   	render layout: false
   end
+
+  def activities
+  end
 end

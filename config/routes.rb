@@ -1,8 +1,9 @@
 Letshang::Application.routes.draw do
   root 'core#index'
+  get "/activities/sanfrancisco", to: 'core#activities', as: 'activities'
   get "core/ajaxmobile"
 
-  get "marketing/about"
+  get "/about", to: 'marketing#about'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
