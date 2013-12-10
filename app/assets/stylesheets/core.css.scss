@@ -9,19 +9,21 @@
 main#index .intro {
 	margin-top: 30px;
 	text-align: center;
+	font-size: 1.1em;
 }
 
 main#index .mainbtn {
 	display: block;
 	margin-top: 30px;
+	margin-bottom: 10px;
 	text-wrap: normal;
 }
 
 @media (min-width: 768px) {
 	main#index .intro {
-		margin-top: 100px;
-	}
-	main#index .mainbtn {
+		margin-top: 80px;
+		margin-bottom: 30px;
+		font-size: 1.3em;
 	}
 }
 
@@ -44,6 +46,11 @@ main#index .mainbtn {
 	padding-bottom: 20px;
 }
 
+/* Activities */
+
+#activities .intro {
+	font-style: italic;
+}
 #activities #filters {
 	margin-top: 30px;
 }
