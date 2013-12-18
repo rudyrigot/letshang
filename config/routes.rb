@@ -1,6 +1,6 @@
 Letshang::Application.routes.draw do
   root 'core#index'
-  get "/activities/sanfrancisco", to: 'core#activities', as: 'activities'
+  get "/sanfrancisco/activities", to: 'core#activities', as: 'activities'
   get "core/ajaxmobile"
 
   get "/about", to: 'marketing#about'
