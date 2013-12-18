@@ -6,17 +6,18 @@
 
 /* Homepage */
 
-main#index .intro {
-	margin-top: 30px;
-	text-align: center;
-	font-size: 1.1em;
-}
-
-main#index .mainbtn {
-	display: block;
-	margin-top: 30px;
-	margin-bottom: 10px;
-	text-wrap: normal;
+main#index {
+	.intro {
+		margin-top: 30px;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	.mainbtn {
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		text-wrap: normal;
+	}
 }
 
 @media (min-width: 768px) {
@@ -36,24 +37,64 @@ main#index .mainbtn {
 	position: fixed ;
 	text-align: center ;
 	width: 100% ;
-}
-#appModeNote .closeAppMode {
-	text-align: right;
-	padding: 5px 10px 0;
-	font-size: 0.8em;
-}
-#appModeNote .noarrow {
-	padding-bottom: 20px;
+	.closeAppMode {
+		text-align: right;
+		padding: 5px 10px 0;
+		font-size: 0.8em;
+	}
+	.noarrow {
+		padding-bottom: 20px;
+	}
 }
 
 /* Activities */
 
-#activities .intro {
-	font-style: italic;
-}
-#activities #filters {
-	margin-top: 30px;
-}
-#activities #activitylist {
-	margin-top: 30px;
+#activities {
+	.intro {
+		font-style: italic;
+	}
+	#activitylist {
+		margin-top: 30px;
+		li {
+			padding: 0;
+			height: 42px;
+			a {
+				display: block;
+			}
+			a:hover p {
+				text-decoration: none;
+			}
+			p {
+				display: inline-block;
+				margin: 0;
+			}
+			p.time {
+				background: #eeeeee;
+				border-right: 1px solid #dddddd;
+				padding: 10px;
+				color: black;
+			}
+			p.title {
+				padding: 10px;
+				font-weight: bold;
+				color: black;
+			}
+			p.place {
+				padding: 10px;
+				font-style: italic;
+				float: right;
+				color: #888888;
+			}
+		}
+	}
+
+	#filters {
+		margin-top: 30px;
+		li.fold {
+			text-align: center;
+			font-size: 0.8em;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
 }

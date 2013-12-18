@@ -45,3 +45,45 @@ where_filters:
     label: 'Financial District'
   goldengatepark:
     label: 'Golden Gate Park'
+  fishermanswharf:
+    label: "Fisherman's Wharf"
+  northbeach:
+    label: 'North Beach'
+  russianhill:
+    label: 'Russian Hill'
+  chinatown:
+    label: 'Chinatown'
+  nobhill:
+    label: 'Nob Hill'
+  port:
+    label: 'Port'
+  marina:
+    label: 'Marina'
+  pacificheights:
+    label: 'Pacific Heights'
+  westernaddition:
+    label: 'Western Addition'
+  haight:
+    label: 'Haight'
+  potrerohill:
+    label: 'Potrero Hill'
+  bernalheights:
+    label: 'Bernal Heights'
+  noevalley:
+    label: 'Noe Valley'
+  presidio:
+    label: 'Presidio'
+  richmond:
+    label: 'Richmond district'
+  sunset:
+    label: 'Sunset district'
+  twinpeaks:
+    label: 'Twin Peaks'
+  excelsior:
+    label: 'Excelsior'
+  hunterspoint:
+    label: "Hunter's point"
+  ingleside:
+    label: 'Ingleside'
+  lakemerced:
+    label: 'Lake Merced'

@@ -6,7 +6,7 @@
 
 	<section class="row">
 		<div id="filters" class="col-sm-4">
-			<div class="filter">
+			<div class="filter" id="what">
 				<h4>What?</h4>
 				<ul class="list-group">
 					<% Settings.what_filters.each do |slug, what_obj| %>
@@ -17,7 +17,7 @@
 					<% end %>
 				</ul>
 			</div>
-			<div class="filter">
+			<div class="filter" id="when">
 				<h4>When?</h4>
 				<ul class="list-group">
 					<li class="list-group-item">
@@ -42,7 +42,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="filter">
+			<div class="filter" id="where">
 				<h4>Where?</h4>
 				<ul class="list-group">
 					<% Settings.where_filters.each do |slug, what_obj| %>
@@ -59,100 +59,122 @@
 				<h5>Today</h5>
 				<ul class="list-group">
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
-					</li>
-					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 				</ul>
 				<h5>Tonight</h5>
 				<ul class="list-group">
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
-					</li>
-					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun by the dawn of lights upon our heads</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 				</ul>
 				<h5>Tomorrow</h5>
 				<ul class="list-group">
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 					<li class="list-group-item">
-						<p>2.15pm</p>
-						<p>Picnicing and having fun</p>
-						<p>Golden Gate Park</p>
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="title">Picnicing and having fun</p>
+							<p class="place">Golden Gate Park</p>
+						</a>
 					</li>
 				</ul>
 			</div>
