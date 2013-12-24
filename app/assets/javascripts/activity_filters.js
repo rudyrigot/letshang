@@ -1,4 +1,4 @@
-$(document).ready(function(){
+var fold_activity_filters = function(){
 	if($('#activities').length) {
 		var foldmenu_init = function(id, nbElems) {
 			$('<li class="list-group-item fold openFold"><a href="#'+id+'">&darr;&nbsp;&nbsp;&nbsp;more stuff &hellip;&nbsp;&nbsp;&nbsp;&darr;</a></li>').insertAfter('#'+id+' li.list-group-item:nth-child('+nbElems+')');
@@ -20,4 +20,7 @@ $(document).ready(function(){
 		foldmenu_init('what', 6);
 		foldmenu_init('where', 5);
 	}
-});
+};
+
+$(document).ready(fold_activity_filters);
+$(document).on('page:load', fold_activity_filters);
