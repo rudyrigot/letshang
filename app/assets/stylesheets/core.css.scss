@@ -65,25 +65,28 @@ main#index {
 				text-decoration: none;
 			}
 			p {
-				display: inline-block;
 				margin: 0;
+				padding: 10px;
 			}
 			p.time {
 				background: #eeeeee;
 				border-right: 1px solid #dddddd;
-				padding: 10px;
+				padding: 10px 7px;
 				color: black;
-			}
-			p.title {
-				padding: 10px;
-				font-weight: bold;
-				color: black;
+				float: left;
+				clear: both;
 			}
 			p.place {
-				padding: 10px;
 				font-style: italic;
 				float: right;
 				color: #888888;
+			}
+			p.title {
+				font-weight: bold;
+				color: black;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 		}
 	}
@@ -95,6 +98,29 @@ main#index {
 			font-size: 0.8em;
 			padding-top: 2px;
 			padding-bottom: 2px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#activities #activitylist li {
+		height: 57px;
+
+		p.time {
+			height: 56px;
+			padding: 18px 7px 0;
+		}
+		p.place {
+			float: none;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding: 5px 10px 0 0;
+			text-align: right;
+			font-size: 0.8em;
+		}
+		p.title {
+			padding: 6px 10px 0;
 		}
 	}
 }
