@@ -1,11 +1,17 @@
 <main id="activities" class="container">
 
-	<p class="intro">
+	<p class="intro hidden-xs">
 		<%= Settings.tagline.html_safe %>
 	</p>
 
+	<section class="btn-group btn-group-justified visible-xs">
+		<a class="btn btn-default" href="#">What?<span class="caret"></span></a>
+		<a class="btn btn-default" href="#">When?<span class="caret"></span></a>
+		<a class="btn btn-default" href="#">Where?<span class="caret"></span></a>
+	</section>
+
 	<section class="row">
-		<div id="filters" class="col-sm-4">
+		<div id="filters" class="col-sm-4 hidden-xs">
 			<div class="filter" id="what">
 				<h4>What?</h4>
 				<ul class="list-group">
