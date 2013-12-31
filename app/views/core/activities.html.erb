@@ -2,10 +2,10 @@
 	<%= Settings.tagline.html_safe %>
 </p>
 
-<section class="btn-group btn-group-justified visible-xs">
-	<a class="btn btn-default" href="#">What?<span class="caret"></span></a>
-	<a class="btn btn-default" href="#">When?<span class="caret"></span></a>
-	<a class="btn btn-default" href="#">Where?<span class="caret"></span></a>
+<section id="filters-mobile" class="btn-group btn-group-justified visible-xs">
+	<a class="btn btn-default" href="#">What? <span class="glyphicon glyphicon-chevron-down"></span></a>
+	<a class="btn btn-default" href="#">When? <span class="glyphicon glyphicon-chevron-down"></span></a>
+	<a class="btn btn-default" href="#">Where? <span class="glyphicon glyphicon-chevron-down"></span></a>
 </section>
 
 <section class="row">
@@ -64,7 +64,7 @@
 			<ul class="list-group">
 				<% 10.times do %>
 					<li class="list-group-item">
-						<a href="#">
+						<a href="<%= frontactivity_path(id: 'aaaaa') %>">
 							<p class="time">2.15pm</p>
 							<p class="place">Golden Gate Park</p>
 							<p class="title">Picnicing and having fun</p>

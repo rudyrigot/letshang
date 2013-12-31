@@ -57,7 +57,7 @@ main#home {
 		margin-top: 30px;
 		li {
 			padding: 0;
-			height: 42px;
+			height: 40px;
 			a {
 				display: block;
 			}
@@ -97,6 +97,9 @@ main#home {
 			padding-bottom: 2px;
 		}
 	}
+	#filters-mobile .glyphicon {
+		font-size: 0.7em;
+	}
 }
 
 @media (max-width: 500px) {
@@ -118,6 +121,27 @@ main#home {
 		}
 		p.title {
 			padding: 6px 10px 0;
+		}
+	}
+}
+
+main#activity {
+	#openmap {
+		text-align: right;
+	}
+	#whosin .photo {
+
+		display:block;
+		margin-top: 20px;
+
+		img {
+			max-width: 50px;
+		}
+		p.name {
+			text-align: center;
+			span {
+				font-size: 0.8em;
+			}
 		}
 	}
 }

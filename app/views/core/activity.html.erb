@@ -1,0 +1,37 @@
+<h1>Picnic and fun at the park</h1>
+
+<div class="row">
+	<div class="col-sm-8">
+		<h3>What we'll do</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis, eros vel iaculis luctus, eros velit molestie orci, aliquam ornare arcu purus tempor ante. Curabitur libero nunc, lobortis a enim sed, dignissim vestibulum augue. Fusce et risus ullamcorper, placerat metus sit amet, dignissim elit. Mauris facilisis nulla mi, vitae commodo risus pellentesque gravida. Aenean sodales vehicula nulla, in tristique lorem scelerisque et. Curabitur luctus varius lacus feugiat mollis. Integer dapibus pharetra nisl id condimentum. In hac habitasse platea dictumst.</p>
+		<h3>You might want to know...</h3>
+		<ul>
+			<li>Bring all the friends you want!</li>
+			<li>You can bring xx friends, but <a href="#">let us know first</a></li>
+			<li>Bring your own drinks and food</li>
+			<li>Dress code: you'll get dirty!</li>
+		</ul>
+	</div>
+	<div class="col-sm-4">
+		<a href="#">
+			<div id="map">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=300x400&maptype=roadmap
+	&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+	&markers=color:red%7Ccolor:red%7Clabel:C%7C40.718217,-73.998284&sensor=false">
+			</div>
+			<p id="openmap">Open in Google Maps <span class="glyphicon glyphicon-new-window"></span></p>
+		</a>
+	</div>
+</div>
+
+<h3>Who's in?</h3>
+<div class="row" id="whosin">
+	<% 10.times do %>
+		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" class="photo">
+				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/c36.11.103.103/s100x100/969936_937128295842_114292280_a.jpg">
+				<p class="name">John John <span class="glyphicon glyphicon-new-window"></p>
+			</a>
+		</div>
+	<% end %>
+</div>

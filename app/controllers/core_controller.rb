@@ -9,5 +9,10 @@ class CoreController < ApplicationController
   end
 
   def activities
+  	@activities = Activity.all
+  	puts @activities
+  end
+
+  def activity
   end
 end
