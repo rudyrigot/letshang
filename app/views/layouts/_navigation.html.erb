@@ -12,7 +12,11 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <%= render 'layouts/navigation_links_left' %>
+        <% if Settings.admin_controllers.include? controller_name %>
+          <%= render 'layouts/admin/navigation_links_left' %>
+        <% else %>
+          <%= render 'layouts/navigation_links_left' %>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <%= render 'layouts/navigation_links_right' %>

@@ -31,9 +31,15 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main id="main" role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+
+      <main id="<%= action_name %>" class="container<% if Settings.admin_controllers.include? controller_name %> admin<% end %>">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </main>
+
+      <% if action_name == 'home' %>
+        <div id="appModeNote"></div> 
+      <% end %>
+      
   </body>
 </html>

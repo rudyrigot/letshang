@@ -1,5 +1,5 @@
 class CoreController < ApplicationController
-  def index
+  def home
   end
 
   def ajaxmobile

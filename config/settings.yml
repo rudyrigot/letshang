@@ -1,5 +1,7 @@
 tagline: 'Do&nbsp;cool&nbsp;stuff with&nbsp;friendly&nbsp;people today in&nbsp;San&nbsp;Francisco.'
 
+admin_controllers: [ 'activities', 'hangers' ]
+
 what_filters:
   zen:
     label: 'Zen / relaxation'

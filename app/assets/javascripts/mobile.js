@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	if (
-	$('main#index').length &&
+	$('#appModeNote').length &&
 	("standalone" in window.navigator) &&
 	!window.navigator.standalone
 	){

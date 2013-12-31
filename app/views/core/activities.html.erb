@@ -1,80 +1,77 @@
-<main id="activities" class="container">
+<p class="intro hidden-xs">
+	<%= Settings.tagline.html_safe %>
+</p>
 
-	<p class="intro hidden-xs">
-		<%= Settings.tagline.html_safe %>
-	</p>
+<section class="btn-group btn-group-justified visible-xs">
+	<a class="btn btn-default" href="#">What?<span class="caret"></span></a>
+	<a class="btn btn-default" href="#">When?<span class="caret"></span></a>
+	<a class="btn btn-default" href="#">Where?<span class="caret"></span></a>
+</section>
 
-	<section class="btn-group btn-group-justified visible-xs">
-		<a class="btn btn-default" href="#">What?<span class="caret"></span></a>
-		<a class="btn btn-default" href="#">When?<span class="caret"></span></a>
-		<a class="btn btn-default" href="#">Where?<span class="caret"></span></a>
-	</section>
-
-	<section class="row">
-		<div id="filters" class="col-sm-4 hidden-xs">
-			<div class="filter" id="what">
-				<h4>What?</h4>
-				<ul class="list-group">
-					<% Settings.what_filters.each do |slug, what_obj| %>
-						<li class="list-group-item">
-							<span class="badge">0</span>
-							<a href="<%= slug %>"><%= what_obj.label %></a>
-						</li>
-					<% end %>
-				</ul>
-			</div>
-			<div class="filter" id="when">
-				<h4>When?</h4>
-				<ul class="list-group">
+<section class="row">
+	<div id="filters" class="col-sm-4 hidden-xs">
+		<div class="filter" id="what">
+			<h4>What?</h4>
+			<ul class="list-group">
+				<% Settings.what_filters.each do |slug, what_obj| %>
 					<li class="list-group-item">
 						<span class="badge">0</span>
-						<a href="#">Today</a>
+						<a href="<%= slug %>"><%= what_obj.label %></a>
 					</li>
-					<li class="list-group-item">
-						<span class="badge">0</span>
-						<a href="#">Tonight</a>
-					</li>
-					<li class="list-group-item">
-						<span class="badge">0</span>
-						<a href="#">Tomorrow</a>
-					</li>
-					<li class="list-group-item">
-						<span class="badge">0</span>
-						<a href="#">This weekend</a>
-					</li>
-					<li class="list-group-item">
-						<span class="badge">0</span>
-						<a href="#">Next week</a>
-					</li>
-				</ul>
-			</div>
-			<div class="filter" id="where">
-				<h4>Where?</h4>
-				<ul class="list-group">
-					<% Settings.where_filters.each do |slug, what_obj| %>
-						<li class="list-group-item">
-							<span class="badge">0</span>
-							<a href="<%= slug %>"><%= what_obj.label %></a>
-						</li>
-					<% end %>
-				</ul>
-			</div>
+				<% end %>
+			</ul>
 		</div>
-		<div id="activitylist" class="col-sm-8">
-			<div class="slice">
-				<h5>Today</h5>
-				<ul class="list-group">
-					<% 10.times do %>
-						<li class="list-group-item">
-							<a href="#">
-								<p class="time">2.15pm</p>
-								<p class="place">Golden Gate Park</p>
-								<p class="title">Picnicing and having fun</p>
-							</a>
-						</li>
-					<% end %>
-				</ul>
-			</div>
+		<div class="filter" id="when">
+			<h4>When?</h4>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span class="badge">0</span>
+					<a href="#">Today</a>
+				</li>
+				<li class="list-group-item">
+					<span class="badge">0</span>
+					<a href="#">Tonight</a>
+				</li>
+				<li class="list-group-item">
+					<span class="badge">0</span>
+					<a href="#">Tomorrow</a>
+				</li>
+				<li class="list-group-item">
+					<span class="badge">0</span>
+					<a href="#">This weekend</a>
+				</li>
+				<li class="list-group-item">
+					<span class="badge">0</span>
+					<a href="#">Next week</a>
+				</li>
+			</ul>
 		</div>
-	</section>
-</main>
+		<div class="filter" id="where">
+			<h4>Where?</h4>
+			<ul class="list-group">
+				<% Settings.where_filters.each do |slug, what_obj| %>
+					<li class="list-group-item">
+						<span class="badge">0</span>
+						<a href="<%= slug %>"><%= what_obj.label %></a>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<div id="activitylist" class="col-sm-8">
+		<div class="slice">
+			<h5>Today</h5>
+			<ul class="list-group">
+				<% 10.times do %>
+					<li class="list-group-item">
+						<a href="#">
+							<p class="time">2.15pm</p>
+							<p class="place">Golden Gate Park</p>
+							<p class="title">Picnicing and having fun</p>
+						</a>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</section>

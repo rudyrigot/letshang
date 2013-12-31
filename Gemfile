@@ -49,6 +49,8 @@ end
 
 gem "rails_config"
 
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+
 gem 'rails_12factor', group: :production
 
 ruby "2.0.0"
