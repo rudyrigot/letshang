@@ -3,8 +3,10 @@ Letshang::Application.routes.draw do
 
   root 'core#home'
   get "/sanfrancisco/activities", to: 'core#activities', as: 'frontactivities'
-  get "core/ajaxmobile"
   get "/sanfrancisco/activity/:id", to: 'core#activity', as: 'frontactivity'
+
+  get "core/ajaxmobile"
+  get "core/ajaxfilters"
 
   get "/about", to: 'marketing#about'
   

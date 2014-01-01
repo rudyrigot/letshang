@@ -8,6 +8,10 @@ class CoreController < ApplicationController
   	render layout: false
   end
 
+  def ajaxfilters
+    render "_ajaxfilters", layout: false
+  end
+
   def activities
   	@activities = Activity.all
   	puts @activities
