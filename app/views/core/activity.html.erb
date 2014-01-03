@@ -1,7 +1,11 @@
-<h1>Picnic and fun at the park</h1>
+<p class="back">
+	<a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Filters</a>
+</p>
 
 <div class="row">
 	<div class="col-sm-8">
+		<h1>Picnic and fun at the park</h1>
+
 		<h3>What we'll do</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis, eros vel iaculis luctus, eros velit molestie orci, aliquam ornare arcu purus tempor ante. Curabitur libero nunc, lobortis a enim sed, dignissim vestibulum augue. Fusce et risus ullamcorper, placerat metus sit amet, dignissim elit. Mauris facilisis nulla mi, vitae commodo risus pellentesque gravida. Aenean sodales vehicula nulla, in tristique lorem scelerisque et. Curabitur luctus varius lacus feugiat mollis. Integer dapibus pharetra nisl id condimentum. In hac habitasse platea dictumst.</p>
 		<h3>You might want to know...</h3>
@@ -13,6 +17,11 @@
 		</ul>
 	</div>
 	<div class="col-sm-4">
+		<p id="topinbutton" class="inbutton"><a href="#" class="btn btn-primary btn-lg btn-block">Count me in!</a></p>
+		<p id="address">
+			625 Market street, 10th floor
+			<strong>Downtown</strong>
+		</p>
 		<a href="#">
 			<div id="map">
 				<img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=300x400&maptype=roadmap
@@ -31,7 +40,20 @@
 			<a href="#" class="photo">
 				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/c36.11.103.103/s100x100/969936_937128295842_114292280_a.jpg">
 				<p class="name">John John <span class="glyphicon glyphicon-new-window"></p>
+				<p class="organizer">(the one in charge)</p>
 			</a>
 		</div>
 	<% end %>
 </div>
+
+<p id="bottominbutton" class="inbutton"><a href="#" class="btn btn-primary btn-lg btn-block">Count me in!</a></p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'letshang';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>

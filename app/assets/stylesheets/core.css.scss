@@ -53,6 +53,10 @@ main#home {
 	.intro {
 		font-style: italic;
 	}
+	.nofilter {
+		text-align: center;
+		padding: 30px;
+	}
 	#activitylist {
 		margin-top: 30px;
 		li {
@@ -126,6 +130,15 @@ main#home {
 }
 
 main#activity {
+	.back {
+		margin-top: 20px;
+	}
+	#topinbutton {
+		margin: 30px 0;
+	}
+	#bottominbutton {
+		margin: 50px 0;
+	}
 	#openmap {
 		text-align: right;
 	}
@@ -138,10 +151,17 @@ main#activity {
 			max-width: 50px;
 		}
 		p.name {
+			margin-bottom: 0;
 			text-align: center;
 			span {
 				font-size: 0.8em;
 			}
+		}
+		p.organizer {
+			text-align: center;
+			color: black;
+			font-size: 0.8em;
+			font-style: italic;
 		}
 	}
 }

@@ -14,8 +14,11 @@
 		<% if params[:js] == 'no' %>
 			<%= render "ajaxfilters" %>
 		<% else %>
-			<p class="nofilter">Oops, the filters didn't seem to load properly.</p>
-			<p class="nofilter"><a href="?js=no">Click here to reload the page.</a></p>
+			<div class="nofilter">
+				<p><%= image_tag 'ajaxloader.gif' %></p>
+				<p>Wait up, your filters are loading!</p>
+				<p><a href="?js=no">Click here of not</a></p>
+			</div>
 		<% end %>
 	</div>
 	<div id="activitylist" class="col-sm-8">
