@@ -68,12 +68,12 @@ main#home {
 			p {
 				margin: 0;
 				padding: 10px;
+				color: black;
 			}
 			p.time {
 				background: #eeeeee;
 				border-right: 1px solid #dddddd;
 				padding: 10px 7px;
-				color: black;
 				float: left;
 				clear: both;
 			}
@@ -82,9 +82,18 @@ main#home {
 				float: right;
 				color: #888888;
 			}
+			p.arrow {
+				float:right;
+				height: 38px;
+				width: 30px;
+				text-align: center;
+				background-color: #eeeeee;
+				border-left: 1px solid #dddddd;
+				padding: 0;
+				line-height: 35px;
+			}
 			p.title {
 				font-weight: bold;
-				color: black;
 				overflow: hidden;
 				text-overflow: ellipsis;
 				white-space: nowrap;
