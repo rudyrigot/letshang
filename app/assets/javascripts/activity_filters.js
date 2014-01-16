@@ -16,7 +16,7 @@ var foldmenu_init = function(id, nbElems) {
 }
 
 var retrieveFilters = function(){
-	if ($('#filters_inner').length == 0 && $(window).width() > 767) {
+	if ($('main#activities').length != 0 && $('#filters_inner').length == 0 && $(window).width() > 767) {
 		$.get('/core/ajaxfilters', function(data) {
 			$('#filters').html(data);
 			foldmenu_init('what', 6);

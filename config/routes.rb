@@ -4,6 +4,7 @@ Letshang::Application.routes.draw do
   root 'core#home'
   get "/sanfrancisco/activities", to: 'core#activities', as: 'frontactivities'
   get "/sanfrancisco/activity/:id", to: 'core#activity', as: 'frontactivity'
+  get "/sanfrancisco/new", to: 'core#new', as: 'frontnew'
 
   get "core/ajaxmobile"
   get "core/ajaxfilters"

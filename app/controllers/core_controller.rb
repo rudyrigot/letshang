@@ -19,4 +19,7 @@ class CoreController < ApplicationController
 
   def activity
   end
+
+  def new
+  end
 end

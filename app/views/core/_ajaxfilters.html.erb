@@ -38,10 +38,10 @@
 	<div class="filter" id="where">
 		<h4>Where?</h4>
 		<ul class="list-group">
-			<% Settings.where_filters.each do |slug, what_obj| %>
+			<% Settings.where_filters.each do |slug, where_obj| %>
 				<li class="list-group-item">
 					<span class="badge">0</span>
-					<a href="<%= slug %>"><%= what_obj.label %></a>
+					<a href="<%= slug %>"><%= where_obj.label %></a>
 				</li>
 			<% end %>
 		</ul>

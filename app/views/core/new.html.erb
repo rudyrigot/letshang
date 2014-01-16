@@ -1,0 +1,79 @@
+<p class="intro hidden-xs">
+	<%= Settings.tagline.html_safe %>
+</p>
+
+<p id="uptosomething">So you're up to something?</p>
+<p id="letpeopleknow">Let people know, so they can join you!</p>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+
+		<form role="form" class="form-horizontal">
+
+			<h2>Where?</h2>
+
+			<div class="form-group">
+				<label for="area" class="col-sm-4 control-label">In what area?</label>
+				<div class="col-sm-8">
+					<select class="form-control" id="area">
+						<% Settings.where_filters.each do |slug, where_obj| %>
+							<option value="<%= slug %>"><%= where_obj.label %></option>
+						<% end %>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="address" class="col-sm-4 control-label">Where to meet up?</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" id="address">
+				</div>
+			</div>
+
+			<h2>When?</h2>
+
+			<div class="form-group">
+				<div id="firstdays">
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="today">
+						Today (Wed)
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="tomorrow">
+						Tomorrow (Thur)
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="friday">
+						Friday
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="saturday">
+						Saturday
+					</div>
+				</div>
+				<div id="linkformoredays">
+					<a href="#">Later than that <span class="glyphicon glyphicon-arrow-right"></span></a>
+				</div>
+				<div id="seconddays">
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="sunday">
+						Sunday
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="monday">
+						Monday
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="tuesday">
+						Tuesday
+					</div>
+					<div class="col-sm-3">
+						<input type="radio" name="day" value="wednesday">
+						Next Wednesday
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+</div>

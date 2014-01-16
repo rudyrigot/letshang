@@ -48,11 +48,11 @@ main#home {
 }
 
 /* Activities */
+.intro {
+	font-style: italic;
+}
 
 #activities {
-	.intro {
-		font-style: italic;
-	}
 	.nofilter {
 		text-align: center;
 		padding: 30px;
@@ -175,4 +175,38 @@ main#activity {
 			font-style: italic;
 		}
 	}
+}
+
+main#new {
+	#uptosomething {
+		margin-top: 50px;
+		text-align: center;
+		font-size: 2em;
+	}
+	#letpeopleknow {
+		text-align: center;
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+
+	#firstdays, #seconddays {
+		margin: 20px 0 0;
+	}
+	#seconddays {
+		display: none;
+	}
+	#linkformoredays {
+		text-align: right;
+		padding: 0 15px;
+	}
+}
+
+.js main#new {
+	#linkformoredays {
+		display: none;
+	}
+	#seconddays {
+		display: block;
+	}
+
 }
